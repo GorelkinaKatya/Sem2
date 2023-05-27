@@ -1,6 +1,13 @@
 ﻿Console.Clear();
-Console.Write("Введите число: ");
+Console.Write("Введите положительное число: ");
 int n = int.Parse(Console.ReadLine()!);
+
+while (n < 0)
+{
+    Console.Write("Вы ввели отрицательное число.\nВведите положительное число: ");
+    n = int.Parse(Console.ReadLine()!);
+}
+
 int a = n;
 int i = 1;
 
